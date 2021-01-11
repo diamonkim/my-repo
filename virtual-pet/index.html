@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+      body {
+        font-family: fantasy;
+        font-weight: bold;
+      }
+      .header {
+        padding: 32px;
+      }
+      .pet-name {
+        font-size: 60px;
+      }
+      .pet-image {
+        height: 500px;
+        max-width: 100%;
+        padding: 32px;
+      }
+      .image-area {
+        background-color: #FFC292;
+        display: grid;
+        justify-items: center;
+      }
+      .activity-icon {
+        height: 40px;
+        height: 40px;
+      }
+      .main {
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+      }
+      .interactive-area {
+        background-color: #00BEBD;
+        display: grid;
+        align-items: center; /* This centers all elements inside of this element vertically */
+        justify-items: center; /* This centers all elements inside of this element horizontally */
+      }
+      .activity-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; /* This creates 3 columns of equal length */
+        width: 90%; /* Makes this element almost as wide as the parent element */
+        padding: 0 1rem;
+        align-items: center;
+      }
+      .activity-button {
+        background-color: #B27499;
+        border-radius: 8px;
+        box-shadow: 0 0 5px 0 grey;
+        color: white;
+        cursor: pointer;
+        height: 100%;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+      }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="pet-name">Pikachu</div>
+      <div class="description">He is yellow, cute, and good at attacking with electricity.</div>
+        </div>
+        <div class="main">
+            <div class="image-area">
+                <img class="pet-image" src='neutral.jpg' />
+            </div>
+            <div class="interactive-area">
+                <div class="activity-row">
+                    <img class="activity-icon" src="food.png" />
+                    <div class="activity-stat">100</div>
+                    <div class="activity-button">Eat Food</div>
+                  </div>
+                  <div class="activity-row">
+                    <img class="activity-icon" src="water.png" />
+                    <div class="activity-stat">50</div>
+                    <div class="activity-button">Drink Water</div>
+                  </div>
+                  <div class="activity-row">
+                    <img class="activity-icon" src="exercise.png" />
+                    <div class="activity-stat">5</div>
+                    <div class="activity-button">Exercise</div>
+                  </div>
+            </div>
+        </div>
+    </body>
+</html>
